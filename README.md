@@ -227,6 +227,91 @@ Vactual ≈ 2 × Vset
 **Example:** Measured −4.62 vs −4.70 → −1.7%.
 
 
+## Practice questions
+
+Same concepts and formulas as the Brightspace quiz, with new numbers (not the real quiz questions). Try each one before opening the answer.
+
+**Q1.** Design an inverting amplifier with gain −3.3 using standard values. Give one exact pair.
+
+<details><summary>Show answer</summary>
+
+**Rin = 10 kΩ, Rf = 33 kΩ**. AV = −Rf/Rin. 3.3 is an E24 value, so 10k/33k (or 1k/3.3k, 100k/330k) is exact.
+
+</details>
+
+**Q2.** A non-inverting amplifier has R1 = 39 kΩ (feedback) and R2 = 3.9 kΩ (to ground). What is the gain?
+
+<details><summary>Show answer</summary>
+
+**11**. AV = 1 + R1/R2 = 1 + 39/3.9 = 11.
+
+</details>
+
+**Q3.** An inverting amplifier has Rin = 4.7 kΩ and Rf = 47 kΩ. The input is +0.3 V DC. What is the output?
+
+<details><summary>Show answer</summary>
+
+**−3.0 V**. AV = −47/4.7 = −10. Vout = −10 × 0.3 = −3.0 V.
+
+</details>
+
+**Q4.** An op amp on ±12 V can swing to ±10.5 V. With a gain of −10, what is the largest input peak before clipping?
+
+<details><summary>Show answer</summary>
+
+**1.05 V peak**. |Vin| ≤ 10.5/10 = 1.05 V. Bigger inputs flatten the output’s tips.
+
+</details>
+
+**Q5.** The scope shows CH1 RMS = 0.577 V and CH2 RMS = 2.71 V, and the waves are upside down relative to each other. What gain do you report?
+
+<details><summary>Show answer</summary>
+
+**−4.70**. |AV| = 2.71/0.577 = 4.70. Inverted, so AV = −4.70.
+
+</details>
+
+**Q6.** A transimpedance stage uses a 0.1 Ω sense resistor and a non-inverting gain set by 100 kΩ and 4.7 kΩ. What is AZ, and the output at 600 mA?
+
+<details><summary>Show answer</summary>
+
+**2.23 Ω; 1.34 V**. Gain = 1 + 100/4.7 = 22.28. AZ = 0.1 × 22.28 = 2.228 Ω. Vout = 2.228 × 0.6 = 1.337 V.
+
+</details>
+
+**Q7.** A filter’s passband output is 50 mV. What output marks the half-power frequency?
+
+<details><summary>Show answer</summary>
+
+**35.4 mV**. VHP = V0/√2 = 50/1.414 = 35.4 mV (power is halved, voltage drops to 70.7%).
+
+</details>
+
+**Q8.** A 47 nF capacitor sits across a 220 kΩ feedback resistor. Estimate the corner frequency.
+
+<details><summary>Show answer</summary>
+
+**15.4 Hz**. fc ≈ 1/(2π × 220×10³ × 47×10⁻⁹) = 15.4 Hz.
+
+</details>
+
+**Q9.** How much power does a 0.05 Ω sense resistor dissipate at 2 A?
+
+<details><summary>Show answer</summary>
+
+**0.2 W**. P = I²R = 4 × 0.05 = 0.2 W.
+
+</details>
+
+**Q10.** For the inverting amplifier, the + input is grounded. What voltage do you expect at the − input while it is working linearly?
+
+<details><summary>Show answer</summary>
+
+**0 V (virtual ground)**. Golden rule: V− = V+ = 0 V. That’s why the current through Rin is simply Vin/Rin.
+
+</details>
+
+
 ## Report and quiz guide
 
 - **Pre-lab report:** inverting schematic (4), DC sweep plot (2), calculated gain with work (2), AC sweep plot (2), half-power frequency (2).
